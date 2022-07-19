@@ -1,5 +1,7 @@
-import Avatar from '../img/img_portfolio.png';
+import SocialNetworks from './SocialNetworks';
+import InformationContainer from './InformationContainer';
 
+import Avatar from '../img/img_portfolio.png';
 import '../styles/components/sidebar.sass';
 
 const Sidebar = () => {
@@ -7,9 +9,11 @@ const Sidebar = () => {
     <aside id="sidebar">
       <img src={Avatar} alt="Edimilson Braz" />
       <p className="title">Desenvolvedor Full-Stack</p>
-      <p>Redes Sociais</p>
-      <p>Informações de Contato</p>
-      <a href="" className="btn">Download Currículo</a>
+      <SocialNetworks />
+      <InformationContainer />
+      <a href="" className="btn">
+        Download Currículo
+      </a>
     </aside>
   );
   
