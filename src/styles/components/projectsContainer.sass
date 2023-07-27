@@ -1,0 +1,28 @@
+@use '../variables'
+@use '../mixins'
+
+.projects-container 
+  margin-bottom: 2rem
+
+  .projects-grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .project-card
+      gap: 1rem
+      border: 1px solid #333
+      width: 45%
+      border-radius: variables.$card-border-radius
+      margin-top: 2rem
+      // padding: 2rem
+
+      img
+        max-width: 100%
+        border-radius: 8px
+
+      .project-card-text
+        padding: 1rem
+
+        h3
+          color: #67dd0a
+          margin-bottom: 1rem
