@@ -8,7 +8,9 @@
     display: flex
     flex-wrap: wrap
     gap: 1.5rem
-    
+
+    @include mixins.mobile
+      flex-direction: column
 
     .tecnology-card
       @include mixins.center
@@ -18,14 +20,26 @@
       border-radius: variables.$card-border-radius
       padding: 2rem
 
+      @include mixins.mobile
+        flex-direction: column
+        width: 100%
+        padding: 1rem
+
       h3
         color: variables.$text-color
         margin-bottom: 1rem
 
+        @include mixins.mobile
+          display: none
+      
       svg
         font-size: 6rem
 
-      &:hover 
+        @include mixins.mobile
+          text-align: center
+          font-size: 4rem
+
+      &:hover
         background: variables.$bg-color-secondary
 
     #html
@@ -52,5 +66,3 @@
     #tailwind
       svg
         color: #3AB0CE
-
-    
