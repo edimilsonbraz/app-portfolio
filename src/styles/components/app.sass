@@ -7,6 +7,9 @@
   padding: 3rem
   gap: 3rem
 
+  @include mixins.tablet-lg
+    display: block
+
   @include mixins.mobile
     padding: 1rem
 
@@ -18,6 +21,6 @@
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent 
 
-    @include mixins.mobile
+    @include mixins.tablet-lg
       font-size: 3rem
       text-align: center

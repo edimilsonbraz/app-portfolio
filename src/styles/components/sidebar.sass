@@ -17,16 +17,21 @@
     border-radius: variables.$container-border-radius
     position: absolute
     top: -3rem
-    
+
+    @include mixins.tablet-lg
+      max-width: 60%
+    //   position: static
+      
   .title
     color: variables.$text-color-secondary
     background-color: variables.$bg-color-secondary
     border-radius: variables.$card-border-radius
-    margin-top: 22rem
+    margin-top: 60%
     padding: .8rem 1.2rem
 
-    @include mixins.mobile
-      margin-top: 14rem
+    @include mixins.tablet-lg
+      margin-top: 55%
+
   .btn
     width: 80%
     @include mixins.btn

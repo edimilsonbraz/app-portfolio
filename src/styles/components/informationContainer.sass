@@ -11,6 +11,9 @@
   width: 80% 
   border-radius: variables.$card-border-radius
 
+  @include mixins.tablet
+    padding: 1rem
+
   .info-card
     @include mixins.center
     justify-content: start
@@ -20,14 +23,24 @@
     border-bottom: 1px solid #444
     width: 100%
 
+    @include mixins.tablet
+      display: flex
+      flex-direction: column
+
     h3
       color: variables.$text-color-secondary
       font-size: 1rem
       margin-bottom: .5rem
 
+      @include mixins.tablet
+      display: none
+
     p
       color: variables.$text-color
       font-weight: bold
+
+      @include mixins.tablet
+        font-size: 0.875rem
 
     svg
       background-color: variables.$bg-color

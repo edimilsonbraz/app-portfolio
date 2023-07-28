@@ -9,7 +9,7 @@
     flex-wrap: wrap
     gap: 1.5rem
 
-    @include mixins.mobile
+    @include mixins.tablet
       flex-direction: column
 
     .tecnology-card
@@ -20,7 +20,7 @@
       border-radius: variables.$card-border-radius
       padding: 2rem
 
-      @include mixins.mobile
+      @include mixins.tablet
         flex-direction: column
         width: 100%
         padding: 1rem
@@ -35,9 +35,12 @@
       svg
         font-size: 6rem
 
+        @include mixins.tablet
+          font-size: 4rem
+
         @include mixins.mobile
           text-align: center
-          font-size: 4rem
+          font-size: 3rem
 
       &:hover
         background: variables.$bg-color-secondary
