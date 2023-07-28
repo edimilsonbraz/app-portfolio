@@ -8,14 +8,19 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+
+    @include mixins.tablet-sm
+      flex-direction: column
+
     .project-card
       gap: 1rem
       border: 1px solid #333
       width: 45%
       border-radius: variables.$card-border-radius
       margin-top: 2rem
-      // padding: 2rem
 
+      @include mixins.tablet-sm
+        width: 100%
       img
         max-width: 100%
         border-radius: 8px
