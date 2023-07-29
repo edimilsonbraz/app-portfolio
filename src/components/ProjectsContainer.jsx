@@ -1,3 +1,6 @@
+import TripImage from '../../assets/digitalbook.png'
+import CoffeeImage from '../../assets/coffee-delivery.png'
+
 import '../styles/components/projectsContainer.sass'
 
 const Projects = () => {
@@ -13,8 +16,8 @@ const Projects = () => {
 
       <div className="projects-grid">
         <div className="project-card">
-          <a href="https://fullstack-trips.vercel.app/" target='_blank'>
-            <img src="./assets/digitalbook_003.png" alt="digitalbook_003" />
+          <a href="https://fullstack-trips.vercel.app/" target="_blank">
+            <img src={TripImage} alt="digitalbook" />
             <div className="project-card-text">
               <h3>Digital Book</h3>
               <p>Sistema de reserva de viagem.</p>
@@ -22,30 +25,17 @@ const Projects = () => {
           </a>
         </div>
         <div className="project-card">
-          <a href="https://coffee-delivery-edimilsonbraz.vercel.app/" target='_blank'>
-            <img src="./assets/coffee-delivery.png" alt="coffee-delivery" />
+          <a
+            href="https://coffee-delivery-edimilsonbraz.vercel.app/"
+            target="_blank"
+          >
+            <img src={CoffeeImage} alt="coffee delivery" />
             <div className="project-card-text">
               <h3>Coffee Delivery</h3>
               <p>App para gerenciar um carrinho de compras de uma cafeteria.</p>
             </div>
           </a>
         </div>
-        <div className="project-card">
-          <img src="./assets/digitalbook_003.png" alt="" />
-          <div className="project-card-text">
-            <h3>Digital Book</h3>
-            <p>Sistema de reserva de viagem.</p>
-          </div>
-        </div>
-        <div className="project-card">
-          <img src="./assets/digitalbook_003.png" alt="" />
-          <div className="project-card-text">
-            <h3>Digital Book</h3>
-            <p>Sistema de reserva de viagem.</p>
-          </div>
-        </div>
-        
-        
       </div>
     </section>
   )
