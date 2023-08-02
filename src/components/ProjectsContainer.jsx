@@ -8,10 +8,7 @@ const Projects = () => {
     <section className="projects-container">
       <h2>Projetos</h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-        eveniet aspernatur atque? Voluptatibus ex similique sunt non aperiam,
-        perferendis harum qui quia itaque asperiores blanditiis totam
-        consequuntur rem quidem vel.
+      No decorrer da minha jornada de estudos desenvolvi diversos projetos de software empolgantes, nos quais pude aprimorar minhas habilidades de desenvolvimento e enfrentar desafios gratificantes. Nesta seção, compartilho uma amostra dos meus projetos mais significativos, desde aplicativos de viagens até sistemas de gerenciamento de vendas de uma cafeteria. Cada projeto destaca as tecnologias utilizadas, o objetivo principal e o meu papel no desenvolvimento. Espero que essa visão geral demonstre minha paixão pela programação e meu compromisso em criar soluções inovadoras.
       </p>
 
       <div className="projects-grid">
